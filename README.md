@@ -1,5 +1,3 @@
-#Simple TCP Server
-
 ##To run Simple TCP Server
 
 node index
