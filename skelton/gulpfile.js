@@ -15,6 +15,7 @@ gulp.task("lint:test", () => {
     },
     env:[
       "es6",
+      "jquery",
       "mocha"
     ]
   }))

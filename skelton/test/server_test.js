@@ -1,7 +1,5 @@
 const chai = require("chai");
 const expect = chai.expect;
-const net = require("net");
-const fs = require("fs");
 
 describe("header data should be saved", () => {
   it("should have files in \/response", () => {
