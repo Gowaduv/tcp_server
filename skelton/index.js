@@ -1,1 +1,1 @@
-const server = require(__dirname + "/server");
+const server = require(__dirname + '/server');

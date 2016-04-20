@@ -1,17 +1,17 @@
-const chai = require("chai");
+const chai = require('chai');
 const expect = chai.expect;
 
-describe("header data should be saved", () => {
-  it("should have files in \/response", () => {
-    var image_count;
+describe('header data should be saved', () => {
+  it('should have files in \/response', () => {
+    var imageCount;
     before(() => {
       $.ajax({
-        url: "/response/",
+        url: '/response/',
         success: function(data) {
-          image_count = $(data).length();
+          imageCount = $(data).length();
         }
       });
     });
-    expect(image_count).to.not.equal(0);
+    expect(imageCount).to.not.equal(0);
   });
 });
