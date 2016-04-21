@@ -4,9 +4,9 @@ const fs = require('fs');
 const server = module.exports = net.createServer((socket) => {
   socket.on('data', (chunk) => {
     fs.writeFile(__dirname + '/response/' + Date.now() + '.txt', chunk, () => {
-      socket.write('FIN.');
-      socket.end();
     });
+    socket.write('FIN');
+    socket.end('\n');
   });
 });
 server.listen(3030, () => {

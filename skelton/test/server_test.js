@@ -3,15 +3,15 @@ const expect = chai.expect;
 
 describe('header data should be saved', () => {
   it('should have files in \/response', () => {
-    var imageCount;
+    var responseCount;
     before(() => {
       $.ajax({
         url: '/response/',
         success: function(data) {
-          imageCount = $(data).length();
+          responseCount = $(data).length();
         }
       });
     });
-    expect(imageCount).to.not.equal(0);
+    expect(responseCount).to.not.equal(0);
   });
 });
